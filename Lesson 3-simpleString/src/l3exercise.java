@@ -26,8 +26,8 @@ public class l3exercise {
 		
 		System.out.println();
 		String word4 = "word has 4 letters";
-		System.out.println(word4.substring(0,4).length());
-
+		System.out.println("\""+word4.substring(0,4).length()+"\""+);
+		
 	}
 
 }
