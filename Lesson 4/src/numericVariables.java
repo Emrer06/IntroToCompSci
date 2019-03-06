@@ -14,6 +14,7 @@ public class numericVariables {
 		h = "79+3*(4+82-68)-7+19";
 		k ="(179 +21+10)/7+181";
 		l ="10389*56*11+2246";
+		
 		System.out.println(h+" = "+j);
 		System.out.println(k+" = "+b);
 		System.out.println(l+" = " +c);
