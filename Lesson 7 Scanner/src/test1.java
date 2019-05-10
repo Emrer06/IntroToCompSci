@@ -30,11 +30,17 @@ public class test1 {
 			System.out.println("Your account has been validated. Welcome to Emre.GG!");
 		}
 
-		login(username1, password1);
+		try {
+			login(username1, password1);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+		}
 	}
 	
 	
-	public void login(String uName, String pWord) {
+	public void login(String uName, String pWord) throws InterruptedException {
 		
 		System.out.println("To login enter your username and password:");
 		String username;
@@ -99,9 +105,15 @@ public class test1 {
 				break;
 			case 3:
 				System.out.println("Restarting life in 3 seconds");
-				
-				System.out.println("You are born into a rich 1800s irish family, father works with a potato, mother "
-						+ "cleans the house, you live in a mansion, 10 years later a famine strikes and you all die of starvation");
+				Thread thread = new Thread();
+					for (int i=2;i>=0;i--)
+					{
+			
+						thread.sleep(1000);
+						System.out.println("Restarting life in "+i+" seconds");
+					}
+				System.out.println("You are born into a rich 1800s irish family, your father works on a potato farm, your mother "
+						+ "cleans the house, \nyou live in a mansion, 10 years later a famine strikes and you all die of starvation");
 				System.out.println("You have failed Emre.GG");
 				break;
 				 
